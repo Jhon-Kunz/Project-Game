@@ -105,7 +105,7 @@ label street:
         k "eh!?...{w=0.3}, bukan apa apa kok...." 
         k "kamu...{w=0.5}, kelihatan beda aja, hihi"
 
-        menu:
+        menu(time=10.0, timeout="too_slow"):
             "Perasaan aku sama aja deh":
                 jump awkward
             "Oh...":
@@ -118,5 +118,9 @@ label street:
         label btw:
             show koharu happy with dissolve
             k "btw, kamu suka olahraga apa sih?"
+        
+        label too_slow:
+            show koharu upset with dissolve
+            k "kok diem aja sih"
         
        
