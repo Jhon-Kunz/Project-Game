@@ -6,6 +6,7 @@
 define k = Character("Koharu", color="#cf08ee")
 default player_name = ""
 define j = Character("[player_name]", color="#0842f0")
+define m = Character("Mizuki", color="#faa1b7")
 image splash = "logo.png"
 
 label splashscreen:
@@ -30,7 +31,8 @@ label start:
 
     play music good_morning fadein 2.0
     scene bedroom day with fade
-    "'Terbangun dari tidur...'"
+    show Mizuki
+    m "haloo"
 
     j "Hoaammmm....."
     j "Jam berapa ini?..."
